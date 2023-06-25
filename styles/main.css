@@ -123,6 +123,7 @@ header {
 
 .apresentacao {
     text-align: center;
+    box-sizing: border-box;
 
 }
 
@@ -143,9 +144,8 @@ header {
 }
 
 .imagem {
-
     filter: var(--filtro-imagem);
-    position: relative;
+    box-sizing: border-box;
 }
 
 .imagem:hover {
