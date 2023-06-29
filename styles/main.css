@@ -8,7 +8,7 @@ body {
     height: 100%;
     color: var(--cor-texto);
     background-image:linear-gradient(var(--cor-fundo), var(--cor-fundo2));
-    transition: 0.2s;
+    transition: 0.7s;
 }
 
 .home {
@@ -95,6 +95,7 @@ body {
     height: 24px;
     filter: var(--filtro-imagem);
     visibility: hidden;
+    cursor: pointer;
 
 }
 
