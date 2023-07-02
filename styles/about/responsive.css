@@ -1,0 +1,33 @@
+@import url(about.css);
+
+@media (max-width: 500px) {
+  
+  .home__a {
+    font-size: 13px;
+  }
+
+  .sun {
+    width: 17px;
+    height: 17px;
+  }
+
+  .toggle-image {
+    width: 17px;
+    height: 17px;
+  }
+
+  .apresentacao__nome {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .apresentacao__title {
+    font-size: 27px;
+    padding-bottom: 25px;
+  }
+
+  .imagem {
+    width: 25px;
+    height: 25px;
+  }
+}
