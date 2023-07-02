@@ -1,13 +1,10 @@
-@import url(main.css);
-@import url(responsive.css);
 
-/* body e header */
-
+@import url(var.css);
 
 body {
     height: 100%;
     color: var(--cor-texto);
-    background-image:linear-gradient(var(--cor-fundo), var(--cor-fundo2));
+    background-image: linear-gradient(var(--cor-fundo), var(--cor-fundo2));
     transition: 0.7s;
 }
 
@@ -112,45 +109,6 @@ header {
 
 }
 
-/* section */
-
-.secao1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: unset;
-}
-
-.apresentacao {
-    text-align: center;
-    box-sizing: border-box;
-
-}
-
 .apresentacao__nome {
-    font-size: 24px;
-    font-family: 'Playfair Display', serif;
+    color: var(--cor-texto);
 }
-
-.apresentacao__title {
-    font-size: 36px;
-    padding-bottom: 25px;
-}
-
-.imagens {
-    display: inline-block;
-    padding-right: 10px;
-    
-}
-
-.imagem {
-    filter: var(--filtro-imagem);
-    box-sizing: border-box;
-}
-
-.imagem:hover {
-    transition: 0.2s;
-    filter: var(--filtro-imagem-hover);
-}
-
