@@ -18,19 +18,4 @@ toggleSwitch.addEventListener('change', function() {
   
 });
 
- document.getElementById("project_compras").addEventListener("click", function() {
-        window.open("https://lista-de-compras-khaki.vercel.app/", "_blank");
-    });
 
-    function downloadFile() {
-    const fileUrl = 'Diego Correa Dias.docx'; 
-
-    const link = document.createElement('a');
-    link.href = fileUrl;
-
-
-    link.download = 'Curriculo Diego'; // Substitua pelo nome do arquivo desejado
-
-    // Simule um clique no link para iniciar o download
-    link.click();
-  }
