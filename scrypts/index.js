@@ -18,4 +18,8 @@ toggleSwitch.addEventListener('change', function() {
   
 });
 
+ document.getElementById("project_compras").addEventListener("click", function() {
+        window.open("https://lista-de-compras-khaki.vercel.app/", "_blank");
+    });
 
+ 
