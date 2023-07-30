@@ -13,22 +13,22 @@
 
 <body>
     <header class="home">
-        <ul class="home__item">
-            <a href="#" class="home__a">Home</a>
-            <a href="about.html" class="home__a">About</a>
-            <a href="#" class="home__a">Projects</a>
+        <nav class="home__item" >
+            <a href="#Home" class="home__a">Home</a>
+            <a href="#About" class="home__a">About</a>
+            <a href="#Projects" class="home__a">Projects</a>
             <label for="switch">
                 <input type="checkbox" id="switch" class="switch"/>
                 <img src="imagens/night-mode.png" alt="Toggle" class="toggle-image">
                 <img src="imagens/sun.png" alt="sun" class="sun" id="sun">
             </label>  
-        </ul>
+        </nav>
     </header>
     <main>
-        <section class="secao1">
+        <section class="secao1" id="Home">
             <div class="apresentacao">
                 <h2 class="apresentacao__nome">Diego Dias</h2>
-                <h1 class="apresentacao__title">Programador <span class="animated" class="apresentacao__title"></span></h1>
+                <h1 class="apresentacao__title">Desenvolvedor web <span class="animated" class="apresentacao__title"></span></h1>
             <div class="imagens">
                     <a href="https://www.linkedin.com/in/diego-dias-05b520264" target="_blank">
                         <img src="imagens/linkedin.png" alt="linkedin" class="imagem">
@@ -40,9 +40,62 @@
                     </a>
             
         </section>
+        <section class="secao__about" id="About">
+           <div class="Sobre__apresentacao">
+            <img src="imagens/Perfil.jpg" alt="Minha foto">
+           </div>
+           <div class="Sobre__tecnologias">
+            <h2>Tecnologias</h2>
+            <div class="Sobre__imagen">
+                <img src="imagens/html.png" alt="">
+                <img src="imagens/css.png" alt="">
+                <img src="imagens/js.png" alt="">
+                <img src="imagens/science.png" alt="">
+                <img src="imagens/php.png" alt="">
+            </div>
+        <div class="Sobre__conteudo">
+               <p>Olá, seja bem-vindo(a) ao meu portfólio! Sou um desenvolvedor web Full-Stack com paixão por criar soluções digitais
+                interativas e funcionais. Ao longo da minha jornada, tenho adquirido experiência em diversas tecnologias e frameworks,
+                permitindo-me criar projetos cativantes e dinâmicos.
+             </p>
+        </div>
+       
+        </section>
+
+        <section class="secao__projects" id="Projects">
+            <h2 class="secao__projects__titulo">Projetos</h2>
+            <div class="projects-container">
+                <div class="project__compras" id="project_compras">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                            </div>
+                            <div class="flip-card-back">
+                                <h5 class="title">Carrinho de compras</h5>
+                                <img src="imagens/arrow.png" alt="Redirecionamento">
+                            </div>
+                        </div>
+                </div>
+                <div class="project">
+                    <div class="coming-soon">Em breve</div>
+                </div>
+                <div class="project">
+                    <div class="coming-soon">Em breve</div>
+                </div>
+                <div class="project">
+                    <div class="coming-soon">Em breve</div>
+                </div>
+                <div class="project">
+                    <div class="coming-soon">Em breve</div>
+                </div>
+                <div class="project">
+                    <div class="coming-soon">Em breve</div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="scrypts/index.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="scrypts/escrever.js"></script>
+    <script src="scrypts/Scroll.js"></script>
 </body>
 </html>

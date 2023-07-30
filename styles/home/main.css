@@ -3,6 +3,18 @@
 
 /* body e header */
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-linha);
+    border-radius: 10px;
+}
 
 body {
     height: 100%;
@@ -12,9 +24,15 @@ body {
     transition: 0.7s;
 }
 
+p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+}
+
 .home {
     max-height: 7%;
     position: fixed;
+    z-index: 1;
 }
 
 .home__item {
@@ -155,3 +173,170 @@ header {
     filter: var(--filtro-imagem-hover);
 }
 
+.secao__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.Sobre__apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 250px;
+    background:
+    radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(#000 68%, transparent 0),
+    linear-gradient(to top right, var(--cor-gradiente1) 0%, var(--cor-gradiente2) 100%)
+    ;
+    border-radius: 50%;
+
+}
+
+.Sobre__apresentacao img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.Sobre__tecnologias {
+    font-size: 2rem;
+    font: 1em sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.Sobre__imagen {
+    display: flex;
+    gap: 20px;
+}
+
+.Sobre__conteudo {
+    width: 50%;
+    
+}
+
+.secao__projects {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 5rem;
+    
+}
+
+.secao__projects__titulo {
+    color: var(--cor-texto);
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.project {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+}
+
+.project__compras {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid var(--cor-texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+     
+
+}
+
+
+
+
+.coming-soon {
+    position: relative;
+}
+
+.coming-soon::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--cor-linha);
+    top: 0;
+    left: -15px;
+}
+
+
+.project__compras {
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project__compras:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(Project_compras.jpeg);
+}
+
+.flip-card-back {
+    background-image: linear-gradient(white, white);
+    transform: rotateY(180deg);
+    color: black;
+
+}
+
+.flip-card-back img {
+    position: absolute;
+    padding-left: 80px;
+    padding-top: 80px;
+    height: 24px;
+    width: 24px;
+}

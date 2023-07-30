@@ -30,4 +30,24 @@
     width: 25px;
     height: 25px;
   }
+
+    .Sobre__apresentacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      width: 200px;
+      background:
+        radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
+        radial-gradient(#000 68%, transparent 0),
+        linear-gradient(to top right, var(--cor-gradiente1) 0%, var(--cor-gradiente2) 100%);
+      border-radius: 50%;
+  
+    }
+  
+    .Sobre__apresentacao img {
+      border-radius: 50%;
+      width: 100%;
+    }
+
 }
