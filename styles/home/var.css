@@ -16,7 +16,7 @@
     --cor-gradiente2: #9ADCF3;
     --filtro-imagem: brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(364%) hue-rotate(158deg) brightness(89%) contrast(99%);
     --filtro-imagem-hover:brightness(0) saturate(100%) invert(73%) sepia(57%) saturate(2654%) hue-rotate(211deg) brightness(92%) contrast(83%);
-}
+    --cor-clique-aqui: #ff0000; }
 
 .dark-mode {
     
@@ -29,5 +29,6 @@
     --filtro-imagem: brightness(0) saturate(100%) invert(9%) sepia(57%) saturate(7259%) hue-rotate(358deg) brightness(89%) contrast(110%);
     --filtro-imagem-hover: brightness(0) saturate(100%) invert(92%) sepia(98%) saturate(191%) hue-rotate(241deg) brightness(109%) contrast(81%);
     --filtro-project: brightness(0) saturate(100%) invert(82%) sepia(100%) saturate(2%) hue-rotate(86deg) brightness(109%) contrast(101%);
+    --cor-clique-aqui: greenyellow;
     
 }

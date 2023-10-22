@@ -228,6 +228,11 @@ header {
     
 }
 
+.clique__aqui {
+
+color: var(--cor-clique-aqui);
+}
+
 .secao__projects {
     text-align: center;
     text-transform: uppercase;
